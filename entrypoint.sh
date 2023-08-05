@@ -15,8 +15,8 @@ sudo -u builduser gpg --keyserver keyserver.ubuntu.com --recv-keys 794D3B639565C
 passwd -d builduser
 printf 'builduser ALL=(ALL) ALL\n' | tee -a /etc/sudoers
 
-cat ./gpg_key | base64 --decode | gpg --homedir /home/builduser/.gnupg --import
-rm ./gpg_key
+#cat ./gpg_key | base64 --decode | gpg --homedir /home/builduser/.gnupg --import
+#rm ./gpg_key
 
 for i in 64gram-desktop; do 
 	status=13
