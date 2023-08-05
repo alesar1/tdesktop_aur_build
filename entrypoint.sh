@@ -11,7 +11,7 @@ pacman -Syu --noconfirm --needed sudo git base-devel wget
 useradd builduser -m
 chown -R builduser:builduser /build
 git config --global --add safe.directory /build
-sudo -u builduser gpg --keyserver keyserver.ubuntu.com --recv-keys 38DBBDC86092693E
+sudo -u builduser gpg --keyserver keyserver.ubuntu.com --recv-keys 794D3B639565C4D2
 passwd -d builduser
 printf 'builduser ALL=(ALL) ALL\n' | tee -a /etc/sudoers
 
