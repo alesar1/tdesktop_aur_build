@@ -4,7 +4,7 @@
 # Contributor: Daniil Kovalev <daniil@kovalev.website>
 pkgname=64gram-desktop
 _pkgname=64Gram
-pkgver=1.0.88
+pkgver=1.0.89
 pkgrel=1
 epoch=1
 pkgdesc='Unofficial desktop version of Telegram messaging app'
@@ -29,7 +29,7 @@ source=("https://github.com/TDesktop-x64/tdesktop/releases/download/v${pkgver}/$
         expected-lite-$pkgver.tar.gz::https://github.com/martinmoene/expected-lite/archive/refs/tags/v0.6.3.tar.gz
         https://gitlab.com/mnauw/cppgir/-/archive/960fe054ffaab7cf55722fea6094c56a8ee8f18e/cppgir-960fe054ffaab7cf55722fea6094c56a8ee8f18e.tar.gz)
 noextract=("${_pkgname}-${pkgver}-full.tar.gz")
-sha512sums=('f1e470e6e6c9d921c10b827251bec827afb22fb0bf57ed8ee3b34b2b9237e2e6a3737d7329349da5f15a427edf241899df32ec80cd81c52e4a9bc8cd15a73fee'
+sha512sums=('7762f6d059ea8b029ed0f49074dc3255e1569c47e77c98d3e9458e0636772fd108987e78a54cbf08e25957ccefb70fb475a11449db50e953cc30d0e876df3848'
             'd813a5ac6ff2208b693ecf494d7bf036087e223662f9f34aaaeafea0afe0fe798e867b9610f7221ea80319865502c20b61310d5a31634b888793873d63322463'
             '6650e822de2529582d93291025500afb6a182a0c5a564f656f164d79d8765bb4ca9c9d16227148431cc71c2677923b9364e81bbd4ca4f07f68e36bb380fb9574'
             'd6a4f30f90494dda002ad27d227f17ce0201752178418d7dfada26441e853590d46816c88922e7d458dda68ad4414ddfe6b7fa4ed2a5854e4e3b22675b13f92a'
