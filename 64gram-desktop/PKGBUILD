@@ -40,9 +40,9 @@ prepare() {
     tar -xvf ${_pkgname}-${pkgver}-full.tar
     cd $_pkgname-$pkgver-full
     patch -p1 --binary < ../fix-lzma-link.patch
-    cd $srcdir
-    tar xf "$srcdir"/expected-lite-$pkgver.tar.gz -C $_pkgname-$pkgver-full/cmake/external/glib/cppgir/expected-lite --strip-components 1
-    tar xf "$srcdir"/cppgir-960fe054ffaab7cf55722fea6094c56a8ee8f18e.tar.gz -C $_pkgname-$pkgver-full/cmake/external/glib/cppgir --strip-components 1
+    #cd $srcdir
+    #tar xf "$srcdir"/expected-lite-$pkgver.tar.gz -C $_pkgname-$pkgver-full/cmake/external/glib/cppgir/expected-lite --strip-components 1
+    #tar xf "$srcdir"/cppgir-960fe054ffaab7cf55722fea6094c56a8ee8f18e.tar.gz -C $_pkgname-$pkgver-full/cmake/external/glib/cppgir --strip-components 1
 }
 
 build() {
