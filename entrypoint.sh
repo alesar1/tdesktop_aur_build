@@ -28,7 +28,8 @@ for i in 64gram-desktop; do
 			&& echo "Warning: $package already built, did you forget to bump the pkgver and/or pkgrel? It will not be rebuilt."
 	done
 	sudo -u builduser bash -c 'export MAKEFLAGS=j$(nproc) && makepkg -s --noconfirm'||status=$?
-
+	for f in *:*; do mv -v -- "$f" "$(echo "$f" | tr ':' '-')"; done
+ 
 	# Package already built is fine.
 	if [ $status != 13 ]; then
 		exit 1
