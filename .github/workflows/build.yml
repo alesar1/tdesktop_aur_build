@@ -33,7 +33,7 @@ jobs:
       run: sha512sum */*.pkg.tar.*
 
     - name: Upload Packages Artifact
-      uses: actions/upload-artifact@v1
+      uses: actions/upload-artifact@v2
       with:
         name: t2-packages-${{ steps.tag.outputs.tag }}
         path: |
